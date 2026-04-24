@@ -3,15 +3,15 @@ import badge from "@/assets/twd-badge.png";
 
 const members = [
   {
-    name: "Afifuz Zaki",
-    role: "Vocal · Guitar",
-    bio: "Penulis lirik utama. Suka kopi item, jam tangan vintage, dan chord yang nggak ketebak.",
+    name: "Afifuz (Jek)",
+    role: "Vokalis",
+    bio: "Suara depan TWD. Penulis lirik yang doyan kopi item dan cerita-cerita kecil yang sering kelewatan.",
     no: "01",
   },
   {
-    name: "Rayhan Pasha",
-    role: "Vocal · Producer",
-    bio: "Otak di balik produksi. Maniak synth analog dan groove yang bikin kepala goyang sendiri.",
+    name: "Raihan",
+    role: "Keyboardis",
+    bio: "Tangan ajaib di balik tuts. Ngeracik harmoni hangat ala 70-an dengan groove yang bikin betah denger.",
     no: "02",
   },
 ];
@@ -30,14 +30,15 @@ const About = () => {
           </div>
           <div className="md:col-span-6">
             <p className="text-foreground/80 text-lg leading-relaxed">
-              Till We Die adalah duo city pop &amp; pop RnB asal Jakarta yang dibentuk oleh{" "}
-              <span className="text-primary font-semibold">Afifuz Zaki</span> dan{" "}
-              <span className="text-primary font-semibold">Rayhan Pasha</span>. Kami nge‑blend nuansa hangat 70‑an
-              dengan groove RnB modern — surat cinta untuk sore yang nggak pernah selesai.
+              <span className="text-primary font-semibold">Till We Die (TWD)</span> merupakan duo asal{" "}
+              <span className="text-primary font-semibold">Surabaya</span> yang doanya sederhana yaitu bisa bikin
+              lagu bareng sampai tua, sampai ubanan, sampai… ya, <em>till we die</em> ya tapi semoga sehat selalu,
+              panjang umur 🙏🏻
             </p>
             <p className="text-foreground/70 text-lg leading-relaxed mt-4">
-              Visi kami sederhana: bikin musik yang serius dikerjain, tapi tetap fun dimainin. Karena hidup terlalu
-              singkat untuk lagu yang membosankan.
+              Dibentuk oleh <span className="text-primary font-semibold">Afifuz (Jek)</span> di vokal dan{" "}
+              <span className="text-primary font-semibold">Raihan</span> di keyboard — nge-blend nuansa hangat
+              70-an dengan groove pop RnB modern. Musik serius, orangnya nggak.
             </p>
           </div>
         </div>
@@ -54,7 +55,7 @@ const About = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between gap-4">
               <div>
-                <div className="text-xs uppercase tracking-[0.3em] text-primary font-bebas">Est. 2021 · Jakarta</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-primary font-bebas">Est. 2021 · Surabaya</div>
                 <div className="font-script text-3xl md:text-4xl mt-1">The Duo</div>
               </div>
               <img src={badge} alt="" className="h-16 md:h-20 w-auto opacity-90 drop-shadow-lg" />

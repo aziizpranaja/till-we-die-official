@@ -1,17 +1,11 @@
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
 
 const items = [
-  { src: g1, alt: "Live performance at Jakarta", caption: "Live · Jakarta", className: "md:col-span-2 md:row-span-2" },
-  { src: g2, alt: "Studio recording session", caption: "Studio Session" },
-  { src: g3, alt: "City pop neon street", caption: "On The Road" },
-  { src: g5, alt: "Band walking through neon alley", caption: "Behind The Scene", className: "md:col-span-2" },
-  { src: g4, alt: "Close up of guitar strings", caption: "Soundcheck" },
-  { src: g6, alt: "Stage lights", caption: "Encore" },
+  { src: g1, alt: "Till We Die bersama fans setelah show", caption: "With The Family", className: "md:col-span-2 md:row-span-2" },
+  { src: g2, alt: "Performance live di panggung Moment", caption: "Live · Moment" },
+  { src: g3, alt: "Afifuz dan Raihan portrait di galeri", caption: "The Duo · Portrait", className: "md:col-span-1 md:row-span-2" },
 ];
 
 const Gallery = () => {

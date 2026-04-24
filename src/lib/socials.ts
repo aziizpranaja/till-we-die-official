@@ -4,6 +4,7 @@ export const socials = {
   tiktok: "https://www.tiktok.com/@tillwedie.official",
   spotify: "https://open.spotify.com/artist/5DMESGqr10igT9Jj0lwyAB",
   sociabuzz: "https://sociabuzz.com/twd",
+  whatsapp: "https://whatsapp.com/channel/0029Vb7SP1BIXnlnywwhkG3n",
 };
 
 export const handles = {
@@ -12,4 +13,5 @@ export const handles = {
   tiktok: "@tillwedie.official",
   spotify: "Till We Die",
   sociabuzz: "sociabuzz.com/twd",
+  whatsapp: "WhatsApp Channel",
 };
