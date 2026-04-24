@@ -1,60 +1,36 @@
-import { Play, ExternalLink } from "lucide-react";
-import a1 from "@/assets/album-1.jpg";
-import a2 from "@/assets/album-2.jpg";
-import a3 from "@/assets/album-3.jpg";
-
-const tracks = [
-  { title: "Sunset Avenue", album: "Neon Memoirs", year: "2024", duration: "3:42", img: a1, popular: true },
-  { title: "Bukan Cuma Mimpi", album: "Single", year: "2024", duration: "4:11", img: a2 },
-  { title: "Bulan Madu", album: "Bulan Madu EP", year: "2023", duration: "3:58", img: a3 },
-  { title: "Lampu Kota", album: "Neon Memoirs", year: "2024", duration: "4:25", img: a1 },
-  { title: "Senja Kemarin", album: "Bulan Madu EP", year: "2023", duration: "3:21", img: a3 },
-];
+import { ExternalLink } from "lucide-react";
+import { socials } from "@/lib/socials";
 
 const Music = () => {
   return (
-    <section id="music" className="relative py-24 md:py-32 bg-secondary/30 border-y border-border">
+    <section id="music" className="relative py-24 md:py-32 bg-secondary/40 border-y border-border">
       <div className="container">
-        <div className="flex items-end justify-between flex-wrap gap-6 mb-16">
+        <div className="flex items-end justify-between flex-wrap gap-6 mb-12">
           <div>
-            <span className="text-xs uppercase tracking-[0.4em] text-primary">/ 02 — Discography</span>
-            <h2 className="font-display text-6xl md:text-8xl mt-4 leading-none">
-              The <span className="gradient-text">Sound</span>
+            <span className="text-xs uppercase tracking-[0.4em] text-primary font-bebas">/ 02 — Discography</span>
+            <h2 className="font-script text-5xl md:text-7xl mt-4 leading-none text-primary">
+              The Sound
             </h2>
           </div>
           <a
-            href="https://open.spotify.com"
+            href={socials.spotify}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"
+            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] font-bebas text-foreground/70 hover:text-primary transition-colors"
           >
             Open in Spotify <ExternalLink className="h-4 w-4" />
           </a>
         </div>
 
         <div className="grid lg:grid-cols-12 gap-8">
-          {/* Featured */}
-          <div className="lg:col-span-5">
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-gold opacity-20 blur-3xl group-hover:opacity-40 transition-opacity" />
-              <div className="relative aspect-square overflow-hidden border border-border">
-                <img src={a1} alt="Neon Memoirs album cover" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <span className="text-xs uppercase tracking-[0.3em] text-primary">Latest Release</span>
-                  <h3 className="font-display text-5xl mt-2">Neon Memoirs</h3>
-                  <p className="text-muted-foreground mt-1">2024 · 8 Tracks</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Embedded player */}
-            <div className="mt-6 bg-card border border-border p-1">
+          {/* Featured artist embed */}
+          <div className="lg:col-span-7">
+            <div className="bg-card border-2 border-primary/30 p-2 shadow-card">
               <iframe
-                title="Spotify embed"
-                src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator&theme=0"
+                title="Till We Die on Spotify"
+                src="https://open.spotify.com/embed/artist/5DMESGqr10igT9Jj0lwyAB?utm_source=generator&theme=0"
                 width="100%"
-                height="152"
+                height="500"
                 frameBorder={0}
                 loading="lazy"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -62,33 +38,35 @@ const Music = () => {
             </div>
           </div>
 
-          {/* Track list */}
-          <div className="lg:col-span-7">
-            <div className="border border-border bg-background/40">
-              {tracks.map((t, i) => (
-                <div
-                  key={i}
-                  className="group flex items-center gap-4 p-4 md:p-5 border-b border-border last:border-b-0 hover:bg-primary/5 transition-colors cursor-pointer"
-                >
-                  <div className="text-muted-foreground font-mono text-sm w-6 group-hover:hidden">
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
-                  <Play className="h-4 w-4 text-primary hidden group-hover:block fill-current" />
-                  <img src={t.img} alt="" loading="lazy" className="h-12 w-12 object-cover" />
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
-                      <span className="font-medium truncate">{t.title}</span>
-                      {t.popular && (
-                        <span className="text-[10px] uppercase tracking-widest px-2 py-0.5 bg-primary text-primary-foreground">Hit</span>
-                      )}
-                    </div>
-                    <div className="text-xs text-muted-foreground truncate">
-                      {t.album} · {t.year}
-                    </div>
-                  </div>
-                  <span className="text-sm text-muted-foreground font-mono">{t.duration}</span>
-                </div>
-              ))}
+          {/* Side panel */}
+          <div className="lg:col-span-5 flex flex-col gap-6">
+            <div className="p-8 bg-primary text-primary-foreground border-2 border-primary">
+              <div className="text-xs uppercase tracking-[0.3em] font-bebas opacity-80">Now Streaming</div>
+              <h3 className="font-script text-5xl mt-3 leading-none">Till We Die</h3>
+              <p className="mt-4 opacity-90">
+                Dengerin discography lengkap kami di Spotify — dari single pertama sampai rilisan terbaru.
+              </p>
+              <a
+                href={socials.spotify}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex items-center gap-2 px-5 py-3 bg-background text-primary font-bebas text-sm uppercase tracking-[0.25em] hover:bg-foreground hover:text-background transition-all"
+              >
+                Open Spotify <ExternalLink className="h-4 w-4" />
+              </a>
+            </div>
+
+            <div className="p-8 bg-card border border-border">
+              <div className="text-xs uppercase tracking-[0.3em] text-primary font-bebas">Watch on YouTube</div>
+              <h3 className="font-script text-3xl mt-2">Music Videos & Lives</h3>
+              <a
+                href={socials.youtube}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-4 inline-flex items-center gap-2 text-foreground/80 hover:text-primary text-sm font-bebas uppercase tracking-[0.25em] transition-colors"
+              >
+                @TillWeDie.official <ExternalLink className="h-4 w-4" />
+              </a>
             </div>
           </div>
         </div>

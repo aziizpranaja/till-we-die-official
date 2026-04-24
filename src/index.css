@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,57 +6,57 @@
 
 @layer base {
   :root {
-    /* Till We Die — dark city pop / RnB aesthetic */
-    --background: 0 0% 4%;
-    --foreground: 40 30% 96%;
+    /* Till We Die — warm cream / retro 70s aesthetic */
+    --background: 48 60% 94%;            /* cream */
+    --foreground: 18 70% 22%;            /* deep burnt brown */
 
-    --card: 0 0% 7%;
-    --card-foreground: 40 30% 96%;
+    --card: 46 55% 90%;
+    --card-foreground: 18 70% 22%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 40 30% 96%;
+    --popover: 48 60% 94%;
+    --popover-foreground: 18 70% 22%;
 
-    /* Gold neon accent */
-    --primary: 43 96% 56%;
-    --primary-foreground: 0 0% 6%;
-    --primary-glow: 45 100% 65%;
+    /* Bold orange accent (from logo) */
+    --primary: 18 88% 48%;
+    --primary-foreground: 48 60% 96%;
+    --primary-glow: 22 95% 58%;
 
-    --secondary: 0 0% 11%;
-    --secondary-foreground: 40 30% 96%;
+    --secondary: 44 50% 86%;
+    --secondary-foreground: 18 70% 22%;
 
-    --muted: 0 0% 12%;
-    --muted-foreground: 40 8% 65%;
+    --muted: 44 40% 82%;
+    --muted-foreground: 22 30% 38%;
 
-    --accent: 14 90% 55%;
-    --accent-foreground: 0 0% 6%;
+    --accent: 14 90% 50%;
+    --accent-foreground: 48 60% 96%;
 
-    --destructive: 0 75% 55%;
-    --destructive-foreground: 40 30% 96%;
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 48 60% 96%;
 
-    --border: 0 0% 14%;
-    --input: 0 0% 12%;
-    --ring: 43 96% 56%;
+    --border: 30 40% 78%;
+    --input: 44 40% 86%;
+    --ring: 18 88% 48%;
 
     --radius: 0.25rem;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(43 96% 56%), hsl(35 100% 50%));
-    --gradient-dark: linear-gradient(180deg, hsl(0 0% 4% / 0), hsl(0 0% 4% / 0.95));
-    --gradient-radial: radial-gradient(ellipse at center, hsl(43 96% 56% / 0.15), transparent 60%);
+    --gradient-gold: linear-gradient(135deg, hsl(18 88% 48%), hsl(28 95% 55%));
+    --gradient-dark: linear-gradient(180deg, hsl(48 60% 94% / 0), hsl(48 60% 94% / 0.95));
+    --gradient-radial: radial-gradient(ellipse at center, hsl(18 88% 48% / 0.18), transparent 60%);
 
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(43 96% 56% / 0.35);
-    --shadow-glow-strong: 0 0 80px hsl(43 96% 56% / 0.5);
-    --shadow-card: 0 20px 60px -20px hsl(0 0% 0% / 0.7);
+    --shadow-glow: 0 0 40px hsl(18 88% 48% / 0.30);
+    --shadow-glow-strong: 0 0 80px hsl(18 88% 48% / 0.45);
+    --shadow-card: 0 20px 60px -20px hsl(18 70% 22% / 0.25);
 
-    --sidebar-background: 0 0% 6%;
-    --sidebar-foreground: 40 30% 96%;
-    --sidebar-primary: 43 96% 56%;
-    --sidebar-primary-foreground: 0 0% 6%;
-    --sidebar-accent: 0 0% 10%;
-    --sidebar-accent-foreground: 40 30% 96%;
-    --sidebar-border: 0 0% 14%;
-    --sidebar-ring: 43 96% 56%;
+    --sidebar-background: 48 60% 94%;
+    --sidebar-foreground: 18 70% 22%;
+    --sidebar-primary: 18 88% 48%;
+    --sidebar-primary-foreground: 48 60% 96%;
+    --sidebar-accent: 44 50% 86%;
+    --sidebar-accent-foreground: 18 70% 22%;
+    --sidebar-border: 30 40% 78%;
+    --sidebar-ring: 18 88% 48%;
   }
 }
 
@@ -71,12 +71,12 @@
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, sans-serif;
     background-image:
-      radial-gradient(circle at 20% 10%, hsl(43 96% 56% / 0.06), transparent 40%),
-      radial-gradient(circle at 80% 80%, hsl(14 90% 55% / 0.05), transparent 45%);
+      radial-gradient(circle at 15% 10%, hsl(18 88% 48% / 0.10), transparent 45%),
+      radial-gradient(circle at 85% 80%, hsl(28 95% 55% / 0.08), transparent 50%);
   }
   h1, h2, h3, .display {
-    font-family: 'Bebas Neue', 'Space Grotesk', sans-serif;
-    letter-spacing: 0.02em;
+    font-family: 'Pacifico', 'Lobster', cursive;
+    letter-spacing: 0;
   }
   ::selection {
     background: hsl(var(--primary));
@@ -85,11 +85,18 @@
 }
 
 @layer utilities {
+  .font-script {
+    font-family: 'Pacifico', 'Lobster', cursive;
+  }
+  .font-bebas {
+    font-family: 'Bebas Neue', 'Space Grotesk', sans-serif;
+    letter-spacing: 0.04em;
+  }
   .text-glow {
-    text-shadow: 0 0 20px hsl(var(--primary) / 0.6), 0 0 40px hsl(var(--primary) / 0.3);
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.5), 0 0 40px hsl(var(--primary) / 0.25);
   }
   .text-glow-soft {
-    text-shadow: 0 0 24px hsl(var(--primary) / 0.4);
+    text-shadow: 0 0 18px hsl(var(--primary) / 0.3);
   }
   .gradient-text {
     background: var(--gradient-gold);
@@ -105,8 +112,8 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    opacity: 0.06;
-    mix-blend-mode: overlay;
+    opacity: 0.10;
+    mix-blend-mode: multiply;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
   .marquee-track {

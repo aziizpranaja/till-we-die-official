@@ -9,9 +9,9 @@ const Videos = () => {
     <section id="videos" className="relative py-24 md:py-32">
       <div className="container">
         <div className="mb-16 max-w-2xl">
-          <span className="text-xs uppercase tracking-[0.4em] text-primary">/ 05 — Videos</span>
-          <h2 className="font-display text-6xl md:text-8xl mt-4 leading-none">
-            Watch <span className="gradient-text">Us Move</span>
+          <span className="text-xs uppercase tracking-[0.4em] text-primary font-bebas">/ 05 — Videos</span>
+          <h2 className="font-script text-5xl md:text-7xl mt-4 leading-[1.05] text-primary">
+            Watch Us Move
           </h2>
         </div>
 
@@ -29,8 +29,8 @@ const Videos = () => {
                 />
               </div>
               <div className="mt-4">
-                <div className="text-xs uppercase tracking-[0.3em] text-primary font-mono">/ 0{i + 1}</div>
-                <h3 className="font-display text-2xl mt-1">{v.title}</h3>
+                <div className="text-xs uppercase tracking-[0.3em] text-primary font-bebas">/ 0{i + 1}</div>
+                <h3 className="font-script text-2xl mt-1">{v.title}</h3>
                 <p className="text-sm text-muted-foreground">{v.meta}</p>
               </div>
             </div>

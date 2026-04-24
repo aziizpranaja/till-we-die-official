@@ -19,9 +19,9 @@ const Gallery = () => {
     <section id="gallery" className="relative py-24 md:py-32">
       <div className="container">
         <div className="mb-16 max-w-2xl">
-          <span className="text-xs uppercase tracking-[0.4em] text-primary">/ 03 — Gallery</span>
-          <h2 className="font-display text-6xl md:text-8xl mt-4 leading-none">
-            Frame by <span className="gradient-text">Frame</span>
+          <span className="text-xs uppercase tracking-[0.4em] text-primary font-bebas">/ 03 — Gallery</span>
+          <h2 className="font-script text-5xl md:text-7xl mt-4 leading-[1.05] text-primary">
+            Frame by Frame
           </h2>
         </div>
 
