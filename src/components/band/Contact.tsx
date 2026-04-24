@@ -25,9 +25,9 @@ const Contact = () => {
       <div className="container">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
-            <span className="text-xs uppercase tracking-[0.4em] text-primary">/ 07 — Booking</span>
-            <h2 className="font-display text-5xl md:text-7xl mt-4 leading-none">
-              Let's <span className="gradient-text">Talk</span>
+            <span className="text-xs uppercase tracking-[0.4em] text-primary font-bebas">/ 07 — Booking</span>
+            <h2 className="font-script text-5xl md:text-7xl mt-4 leading-[1.05] text-primary">
+              Let's Talk
             </h2>
             <p className="text-muted-foreground mt-6 max-w-md">
               Mau booking buat event, kolaborasi, atau cuma sekadar say hi? Kirim pesan, kita baca semua.

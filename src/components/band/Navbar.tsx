@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoScript from "@/assets/twd-logo-script.png";
+import { socials } from "@/lib/socials";
 
 const links = [
   { href: "#about", label: "About" },
@@ -23,15 +25,12 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"
+        scrolled ? "bg-background/85 backdrop-blur-xl border-b border-border" : "bg-transparent"
       }`}
     >
       <nav className="container flex items-center justify-between h-16 md:h-20">
         <a href="#hero" className="flex items-center gap-2 group">
-          <span className="h-2 w-2 rounded-full bg-primary animate-pulse-glow" />
-          <span className="font-display text-xl md:text-2xl tracking-widest text-glow-soft">
-            TILL <span className="gradient-text">WE</span> DIE
-          </span>
+          <img src={logoScript} alt="Till We Die" className="h-9 md:h-11 w-auto" />
         </a>
 
         <ul className="hidden md:flex items-center gap-8">
@@ -39,7 +38,7 @@ const Navbar = () => {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-sm uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+                className="text-xs uppercase tracking-[0.25em] font-bebas text-foreground/70 hover:text-primary transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
               >
                 {l.label}
               </a>
@@ -48,8 +47,10 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="#music"
-          className="hidden md:inline-flex items-center px-5 py-2 text-xs uppercase tracking-widest font-semibold bg-primary text-primary-foreground hover:bg-primary-foreground hover:text-primary border border-primary transition-all hover:shadow-glow"
+          href={socials.spotify}
+          target="_blank"
+          rel="noreferrer"
+          className="hidden md:inline-flex items-center px-5 py-2 text-xs uppercase tracking-[0.25em] font-bebas bg-primary text-primary-foreground hover:bg-foreground hover:text-background transition-all hover:shadow-glow"
         >
           Listen
         </a>
@@ -67,7 +68,7 @@ const Navbar = () => {
                 <a
                   onClick={() => setOpen(false)}
                   href={l.href}
-                  className="block py-2 text-sm uppercase tracking-widest text-muted-foreground hover:text-primary"
+                  className="block py-2 text-sm uppercase tracking-widest font-bebas text-foreground/80 hover:text-primary"
                 >
                   {l.label}
                 </a>
