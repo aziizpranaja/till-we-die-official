@@ -1,7 +1,6 @@
 const videos = [
-  { id: "dQw4w9WgXcQ", title: "Sunset Avenue (Official MV)", meta: "Music Video · 2024" },
-  { id: "ScMzIvxBSi4", title: "Bukan Cuma Mimpi (Live Session)", meta: "Live · 2024" },
-  { id: "jfKfPfyJRdk", title: "Bulan Madu (Acoustic)", meta: "Acoustic · 2023" },
+  { id: "k_9pc4VyVEw", title: "Till We Die — Official", meta: "Music Video" },
+  { id: "qppO0ue6edM", title: "Till We Die — Official", meta: "Music Video" },
 ];
 
 const Videos = () => {

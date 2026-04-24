@@ -38,7 +38,7 @@ const Navbar = () => {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-xs uppercase tracking-[0.25em] font-bebas text-foreground/70 hover:text-primary transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+                className="text-base uppercase tracking-[0.2em] font-bebas text-foreground/80 hover:text-primary transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
               >
                 {l.label}
               </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
           href={socials.spotify}
           target="_blank"
           rel="noreferrer"
-          className="hidden md:inline-flex items-center px-5 py-2 text-xs uppercase tracking-[0.25em] font-bebas bg-primary text-primary-foreground hover:bg-foreground hover:text-background transition-all hover:shadow-glow"
+          className="hidden md:inline-flex items-center px-6 py-2.5 text-base uppercase tracking-[0.2em] font-bebas bg-primary text-primary-foreground hover:bg-foreground hover:text-background transition-all hover:shadow-glow"
         >
           Listen
         </a>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <a
                   onClick={() => setOpen(false)}
                   href={l.href}
-                  className="block py-2 text-sm uppercase tracking-widest font-bebas text-foreground/80 hover:text-primary"
+                  className="block py-2 text-base uppercase tracking-widest font-bebas text-foreground/80 hover:text-primary"
                 >
                   {l.label}
                 </a>

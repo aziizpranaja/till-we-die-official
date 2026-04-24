@@ -6,36 +6,36 @@
 
 @layer base {
   :root {
-    /* Till We Die — warm cream / retro 70s aesthetic */
-    --background: 48 60% 94%;            /* cream */
+    /* Till We Die — VERY cream + bold orange */
+    --background: 45 85% 96%;            /* very cream */
     --foreground: 18 70% 22%;            /* deep burnt brown */
 
-    --card: 46 55% 90%;
+    --card: 45 80% 93%;
     --card-foreground: 18 70% 22%;
 
-    --popover: 48 60% 94%;
+    --popover: 45 85% 96%;
     --popover-foreground: 18 70% 22%;
 
-    /* Bold orange accent (from logo) */
-    --primary: 18 88% 48%;
-    --primary-foreground: 48 60% 96%;
+    /* Bold orange accent */
+    --primary: 18 92% 50%;
+    --primary-foreground: 45 85% 97%;
     --primary-glow: 22 95% 58%;
 
-    --secondary: 44 50% 86%;
+    --secondary: 44 75% 90%;
     --secondary-foreground: 18 70% 22%;
 
-    --muted: 44 40% 82%;
+    --muted: 44 60% 88%;
     --muted-foreground: 22 30% 38%;
 
-    --accent: 14 90% 50%;
-    --accent-foreground: 48 60% 96%;
+    --accent: 14 92% 52%;
+    --accent-foreground: 45 85% 97%;
 
     --destructive: 0 75% 50%;
     --destructive-foreground: 48 60% 96%;
 
-    --border: 30 40% 78%;
-    --input: 44 40% 86%;
-    --ring: 18 88% 48%;
+    --border: 30 50% 80%;
+    --input: 44 60% 90%;
+    --ring: 18 92% 50%;
 
     --radius: 0.25rem;
 
@@ -49,7 +49,7 @@
     --shadow-glow-strong: 0 0 80px hsl(18 88% 48% / 0.45);
     --shadow-card: 0 20px 60px -20px hsl(18 70% 22% / 0.25);
 
-    --sidebar-background: 48 60% 94%;
+    --sidebar-background: 45 85% 96%;
     --sidebar-foreground: 18 70% 22%;
     --sidebar-primary: 18 88% 48%;
     --sidebar-primary-foreground: 48 60% 96%;

@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Music2, Heart } from "lucide-react";
+import { Instagram, Youtube, Music2, Heart, MessageCircle } from "lucide-react";
 import logoScript from "@/assets/twd-logo-script.png";
 import { socials } from "@/lib/socials";
 
@@ -13,6 +13,7 @@ const socialList = [
   { Icon: Youtube, href: socials.youtube, label: "YouTube" },
   { Icon: TikTokIcon, href: socials.tiktok, label: "TikTok" },
   { Icon: Music2, href: socials.spotify, label: "Spotify" },
+  { Icon: MessageCircle, href: socials.whatsapp, label: "WhatsApp Channel" },
   { Icon: Heart, href: socials.sociabuzz, label: "Sociabuzz" },
 ];
 
@@ -26,7 +27,7 @@ const Footer = () => {
               <img src={logoScript} alt="Till We Die" className="h-16 w-auto" />
             </a>
             <p className="mt-4 text-foreground/70 max-w-xs">
-              Musik Serius, Orangnya Nggak. Dibuat dengan cinta dari Jakarta oleh Afifuz &amp; Rayhan.
+              Musik Serius, Orangnya Nggak. Duo asal Surabaya — Afifuz (Jek) &amp; Raihan.
             </p>
           </div>
 
@@ -64,7 +65,7 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs uppercase tracking-widest font-bebas text-foreground/60">
           <span>© {new Date().getFullYear()} Till We Die. All rights reserved.</span>
-          <span>Made in Jakarta · ID</span>
+          <span>Made in Surabaya · ID</span>
         </div>
       </div>
 

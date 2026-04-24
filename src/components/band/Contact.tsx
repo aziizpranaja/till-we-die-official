@@ -34,33 +34,24 @@ const Contact = () => {
             </p>
 
             <div className="mt-10 space-y-5">
-              <a href="mailto:booking@tillwedie.id" className="group flex items-start gap-4">
+              <a href="mailto:tillwedie2025@gmail.com" className="group flex items-start gap-4">
                 <div className="p-3 border border-border group-hover:border-primary group-hover:text-primary transition-colors">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Booking</div>
-                  <div className="font-medium group-hover:text-primary transition-colors">booking@tillwedie.id</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Booking / Press</div>
+                  <div className="font-medium group-hover:text-primary transition-colors">tillwedie2025@gmail.com</div>
                 </div>
               </a>
-              <a href="mailto:hello@tillwedie.id" className="group flex items-start gap-4">
+              <a href="tel:+6287790794944" className="group flex items-start gap-4">
                 <div className="p-3 border border-border group-hover:border-primary group-hover:text-primary transition-colors">
-                  <Mail className="h-5 w-5" />
-                </div>
-                <div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Press / Media</div>
-                  <div className="font-medium group-hover:text-primary transition-colors">hello@tillwedie.id</div>
-                </div>
-              </a>
-              <div className="flex items-start gap-4">
-                <div className="p-3 border border-border">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Management</div>
-                  <div className="font-medium">+62 812 0000 0000</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Management (TEBE)</div>
+                  <div className="font-medium group-hover:text-primary transition-colors">+62 877-9079-4944</div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 

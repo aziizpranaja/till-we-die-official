@@ -13,8 +13,8 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Till We Die — City Pop & RnB Band from Jakarta";
-    const desc = "Till We Die — band city pop & pop RnB asal Jakarta. Musik Serius, Orangnya Nggak. Dengar lagu, lihat tour, dan ikuti perjalanan kami.";
+    document.title = "Till We Die — Duo City Pop & RnB asal Surabaya";
+    const desc = "Till We Die (TWD) — duo city pop & pop RnB asal Surabaya. Musik Serius, Orangnya Nggak. Dengar lagu, lihat tour, dan ikuti perjalanan Afifuz & Raihan.";
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
       meta = document.createElement("meta");

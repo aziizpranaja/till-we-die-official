@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Music2, Heart } from "lucide-react";
+import { Instagram, Youtube, Music2, Heart, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { socials, handles } from "@/lib/socials";
@@ -15,6 +15,8 @@ const items = [
   { Icon: Youtube, label: "YouTube", href: socials.youtube, handle: handles.youtube },
   { Icon: TikTokIcon, label: "TikTok", href: socials.tiktok, handle: handles.tiktok },
   { Icon: Music2, label: "Spotify", href: socials.spotify, handle: handles.spotify },
+  { Icon: MessageCircle, label: "WhatsApp", href: socials.whatsapp, handle: handles.whatsapp },
+  { Icon: Heart, label: "Sociabuzz", href: socials.sociabuzz, handle: handles.sociabuzz },
 ];
 
 const FanZone = () => {
@@ -36,6 +38,25 @@ const FanZone = () => {
     <section id="fans" className="relative py-24 md:py-32 bg-secondary/40 border-y border-border overflow-hidden">
       <div className="absolute inset-0 bg-gradient-radial opacity-50" />
       <div className="container relative">
+        {/* Sociabuzz support banner — TOP */}
+        <a
+          href={socials.sociabuzz}
+          target="_blank"
+          rel="noreferrer"
+          className="group mb-16 flex flex-col md:flex-row items-center justify-between gap-6 p-6 md:p-8 bg-primary text-primary-foreground border-2 border-primary hover:shadow-glow-strong transition-all"
+        >
+          <div className="flex items-center gap-5">
+            <Heart className="h-10 w-10 fill-current shrink-0" />
+            <div>
+              <div className="text-xs uppercase tracking-[0.4em] font-bebas opacity-80">Support The Duo</div>
+              <div className="font-script text-3xl md:text-4xl mt-1 leading-none">Support us on Sociabuzz</div>
+            </div>
+          </div>
+          <span className="px-6 py-3 bg-background text-primary font-bebas text-sm uppercase tracking-[0.25em] group-hover:bg-foreground group-hover:text-background transition-colors">
+            Donate Now →
+          </span>
+        </a>
+
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="text-xs uppercase tracking-[0.4em] text-primary font-bebas">/ 06 — Fan Zone</span>
@@ -65,16 +86,24 @@ const FanZone = () => {
               </button>
             </form>
 
-            {/* Sociabuzz support button */}
-            <a
-              href={socials.sociabuzz}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex items-center gap-3 px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bebas text-sm uppercase tracking-[0.25em] transition-all"
-            >
-              <Heart className="h-4 w-4 fill-current" />
-              Support us on Sociabuzz
-            </a>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            {items.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noreferrer"
+                className="group p-6 bg-background border-2 border-border hover:border-primary hover:shadow-glow transition-all flex flex-col gap-4"
+              >
+                <s.Icon className="h-8 w-8 text-primary group-hover:scale-110 transition-transform" />
+                <div>
+                  <div className="font-script text-2xl text-foreground">{s.label}</div>
+                  <div className="text-xs text-muted-foreground font-mono mt-1 truncate">{s.handle}</div>
+                </div>
+              </a>
+            ))}
           </div>
 
           <div className="grid grid-cols-2 gap-4">
