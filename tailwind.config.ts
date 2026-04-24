@@ -64,7 +64,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        display: ["Bebas Neue", "Space Grotesk", "sans-serif"],
+        display: ["Pacifico", "Lobster", "cursive"],
+        script: ["Pacifico", "Lobster", "cursive"],
+        bebas: ["Bebas Neue", "sans-serif"],
         sans: ["Inter", "system-ui", "sans-serif"],
         grotesk: ["Space Grotesk", "sans-serif"],
       },
@@ -86,7 +88,7 @@ export default {
         "scale-in": { "0%": { opacity: "0", transform: "scale(0.95)" }, "100%": { opacity: "1", transform: "scale(1)" } },
         "slide-in-right": { "0%": { opacity: "0", transform: "translateX(40px)" }, "100%": { opacity: "1", transform: "translateX(0)" } },
         "float-slow": { "0%,100%": { transform: "translateY(0)" }, "50%": { transform: "translateY(-12px)" } },
-        "pulse-glow": { "0%,100%": { boxShadow: "0 0 20px hsl(43 96% 56% / 0.4)" }, "50%": { boxShadow: "0 0 50px hsl(43 96% 56% / 0.75)" } },
+        "pulse-glow": { "0%,100%": { boxShadow: "0 0 20px hsl(18 88% 48% / 0.4)" }, "50%": { boxShadow: "0 0 50px hsl(18 88% 48% / 0.75)" } },
         "spin-slow": { from: { transform: "rotate(0deg)" }, to: { transform: "rotate(360deg)" } },
       },
       animation: {
